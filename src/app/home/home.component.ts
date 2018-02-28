@@ -43,8 +43,8 @@ export class HomeComponent implements OnInit {
 
     //initialize by counting the lenght of the goals array
     this._data.goal.subscribe(res => this.goals = res);
-    this.itemCount = this.goals.length;
     this._data.changeGoal(this.goals);
+    this.itemCount = this.goals.length;
 
   }
 
@@ -53,8 +53,8 @@ export class HomeComponent implements OnInit {
     if(this.goalText){
       this.goals.push(this.goalText);
       this.goalText = '';
-      this.itemCount = this.goals.length;    
       this._data.changeGoal(this.goals);
+      this.itemCount = this.goals.length; 
     }
 
   }
@@ -62,6 +62,7 @@ export class HomeComponent implements OnInit {
   removeItem(i){
 
     this.goals.splice(i, 1);
+    this.itemCount = this.goals.length; 
     this._data.changeGoal(this.goals);
 
 
