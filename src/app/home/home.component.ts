@@ -50,11 +50,12 @@ export class HomeComponent implements OnInit {
 
   additem(){
 
-    this.goals.push(this.goalText);
-    this.goalText = '';
-    this.itemCount = this.goals.length;    
-    this._data.changeGoal(this.goals);
-
+    if(this.goalText){
+      this.goals.push(this.goalText);
+      this.goalText = '';
+      this.itemCount = this.goals.length;    
+      this._data.changeGoal(this.goals);
+    }
 
   }
 
