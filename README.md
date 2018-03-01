@@ -1,4 +1,8 @@
-# Ng5
+## Ng5
+
+Author: Kim(kedomonzter)
+`Demo:` [Try the demo](https://kedomonzter.github.io/ng5)
+Description: You can clone and use this no need to credit me. It's for practice purpose only.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
